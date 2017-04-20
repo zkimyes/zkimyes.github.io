@@ -1,465 +1,125 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="Keywords" content="" />
-<meta name="Description" content="" />
-<title></title>
-<style>
-body{font-family:Verdana,"宋体";/* font-size:14px; */line-height:1.5;text-align:center;background:#fff;color:#444;word-wrap:break-word;word-break:break-all;word-break:normal;}
-body, div, label, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, p, blockquote, th, td ,img, button
-{margin:0;padding:0;border:0;outline:0;}
-body,button,input,select,textarea{font-family:Verdana,"宋体";font-size:14px;line-height:1.5;}
-h1,h2,h3,h4,h5,h6{font-weight:400;}
-address,cite,dfn,em,i,var,caption,code,dfn,th{font-style:normal;font-weight:400;}
-a{color:#3f74c2;text-decoration:none;}
-a:link{text-decoration:none;}
-a:hover{color:#0af;text-decoration:none;}
- 
-.clear{clear:both;height:0;line-height:0;overflow:hidden;font-size:0;}
-.clearfix:after{
-	content:".";display:block;height:0;clear:both;visibility:hidden;
-}
-.clearfix{zoom:1;}
-.right{float:right}
-.gray3{color:#333}
-.gray6{color:#666}
-.gray9{color:#999}
-ul,ol,dl,dd,dt{list-style:none;}
-
-/*多选控件*/
-.w1000{width:1000px;margin:0 auto}
-.resume-left{border:1px solid #e4e4e4;border-radius:10px;float:left;width:778px;background-color: #fff;padding:30px;_overflow: hidden}
-
-.footer {
-    color: #999;
-    padding: 30px 0 45px;
-    text-align: center;
-}
-
-@charset "utf-8";
-/* CSS Document */
-body{ font-family:"微软雅黑"; background:#e9e9e9; text-align:left;}
-/*====头部样式=====*/
-.resumeThead{width:100%; overflow:hidden;}
-.resumeTop{width:100%; padding:18px 0px; background:#496279;}
-.resumeTop div{width:1000px; margin:0 auto; overflow:hidden;}
-.resumeTop div a{ display:block; float:left;width:160px; height:38px; background:url(http://assets.huibo.com/img/resumetate/resumetate.png) 0 -102px no-repeat;}
-.resumeTop div span{ display:block; float:left;width:85px; height:38px; background:url(http://assets.huibo.com/img/resumetate/resumetate.png) -160px -102px no-repeat;}
-.resumeTmend{width:100%;background:#63829e;}
-.tmendMage{width:1000px; height:60px; overflow:hidden; margin:0 auto;}
-.tmendLt{ float:left; margin-top:14px;}
-.tmendLt em,.tmendLt span{ display:block; float:left;}
-.tmendLt em{width:20px; height:21px; background:url(http://assets.huibo.com/img/resumetate/resumetate.png) -80px -69px no-repeat; margin-top:8px;}
-.tmendLt span{ font-size:20px; color:#1af0ff; padding-left:12px;}
-.tmendRt,.tmendRtx{ float:right;}
-.tmendRt span{ color:#fff; font-size:14px; line-height:60px; display:block; float:left;}
-.tmendRt em{ display:block; float:left;width:76px; height:33px; background:url(http://assets.huibo.com/img/resumetate/resumetate.png) 0 -69px no-repeat; margin-left:6px; margin-top:24px;}
-.tmendRtx p{ float:left; color:#b8d6f0; line-height:60px;}
-.tmendRtx p span{ color:#1af0ff; font-size:16px;}
-.tmendRtx a{ display:block; float:left; line-height:60px; color:#fff; padding-left:20px;}
-.tmendRtx a i{ display:inline-block; vertical-align:middle;width:14px; height:14px; background:url(http://assets.huibo.com/img/resumetate/resumetate.png) -104px -69px no-repeat; padding-right:6px;}
-
-/*====中间区域样式=====*/
-.resumeMain{width:1000px; margin:20px auto 0 auto; background:url(http://assets.huibo.com/img/resumetate/resumeBg.png) repeat-y;}
-.sumeMainLeft{width:798px; float:left; overflow:hidden; border:1px solid #dcdbdb;}
-.sumeMainRight{width:200px; float:right; overflow:hidden;}
-.smNumber{width:100%; height:44px; overflow:hidden; border-bottom:1px solid #f2f2f2; background:#fafafa; position:relative;}
-.smNumber span{ display:block; float:left; line-height:44px; padding-left:20px; color:#b2b2b2; font-size:12px;}
-.smNumber span.sberRt{ float:right; padding:0 20px 0 0;}
-.smNumber a{ display:block;width:160px; height:34px; position:absolute; top:0px; left:50%; background:#e1f4f5; color:#36b1c0; font-size:12px; line-height:34px; text-align:center;border-radius:0 0 10px 10px; margin-left:-80px;}
-.smNumber a i,.smNumberUp a.sberUp i{ display:inline-block;width:9px;  height:11px; background:url(http://assets.huibo.com/img/resumetate/resumetate.png) -3px -51px no-repeat; vertical-align:middle; margin-left:9px; }
-.smNumber a:active,.smNumberUp a.sberUp:active { background:#cff0f1; color:#229fae;}
-.smNumber a:hover i{background:url(http://assets.huibo.com/img/resumetate/resumetate.png) -14px -51px no-repeat;}
-.smNumberUp{width:760px; overflow:hidden; margin:0 0 0 20px; display:none; padding-bottom:20px;}
-.smNumberUp a.sberUp{ display:block; width:100%; height:34px; text-align:center; background:#dcf4f5; line-height:34px; color:#36b1c0;}
-.smNumberUp a.sberUp i{ background-position:-25px -51px;}
-.smNumberUp a.sberUp:hover i{background-position:-36px -51px;}
-.smNumberUp ul{width:720px; background:#e6f9fa; overflow:hidden; margin:0 auto; padding:0 20px;}
-.smNumberUp ul li{ line-height:34px; border-bottom:1px dashed #cee0e0;width:100%; overflow:hidden;}
-.smNumberUp ul li#moreHistory{ border-bottom:none; text-align:center;}
-.smNumberUp ul li.last{ border-bottom:none;}
-.smNumberUp ul li span,.smNumberUp ul li em{ display:block; float:left; font-size:12px;color:#4c4c4c;}
-.smNumberUp ul li span{ padding-right:15px; color:#a0bcbd;}
-.smNumberUp ul li em{width:638px; line-height:22px; margin:6px 0 4px 0;}
-
-.numberName{width:776px; height:auto; overflow:hidden; background:url(http://assets.huibo.com/img/resumetate/resumeBg2.png) left bottom no-repeat; margin:20px auto 30px auto;}
-.nberImg{ display:block; float:left; margin:0 0 8px 8px; border:1px solid #f7f7f7;}
-.numberNx{width:610px; float:right; #margin-bottom:13px;}
-.nberN01{ overflow:hidden;}
-.nberN01 span,.nberN01 em,.nberN01 b{ display:inline-block; }
-.nberN01 span{ font-size:22px; line-height:26px; font-weight:bold; color:#333; padding-right:5px;}
-.nberN01 b{ font-weight:normal; font-size:12px;}
-.nberN02{ overflow:hidden; padding:10px 0 8px 0;}
-.nberN02 span,.nberN02 em{ display:inline-block; vertical-align:middle; color:#333;}
-.nberN02 em{ color:#ccc; padding:0 5px;}
-.nberN03{ overflow:hidden; color:#333;}
-.nberN03 span{ color:#999;}
-.nberN04{ overflow:hidden; margin-top:28px;}
-.nberN04 em,.nberN04 span,.nberN04 i,.nberN04 b{ color:#36b1c0; font-family:Arial, Helvetica, sans-serif; display:inline-block; vertical-align:middle;}
-.nberN04 span{ font-size:16px;}
-.nberN04 span#spnBasicMobilePhone{ font-weight:bold;}
-.nberN04 em{width:12px; height:16px; background:url(http://assets.huibo.com/img/resumetate/resumetate.png) -4px -28px no-repeat;vertical-align:-3px;#vertical-align:middle;margin-right:5px;}
-.nberN04 i{width:16px; height:14px; background:url(http://assets.huibo.com/img/resumetate/resumetate.png) -21px -28px no-repeat; vertical-align:-2px;#vertical-align:middle; margin-left:35px;margin-right:5px;}
-.nberN04 b{width:15px; height:16px;background:url(http://assets.huibo.com/img/resumetate/qq.png) no-repeat;margin:0 5px 0 35px;vertical-align:-2px;#vertical-align:middle; }
-.sumeNtit{width:160px; height:44px; background:#f7f7f7; line-height:44px; color:#5a768f; font-size:16px; font-weight:bold;}
-.sumeNtit em{ display:inline-block; vertical-align:-5px;#vertical-align:middle; background:url(http://assets.huibo.com/img/resumetate/resumetate.png) no-repeat; margin:0 15px 0 20px;}
-.sumeNtit em.titIcon01{width:11px; height:20px; background-position:-5px -4px; margin-left:23px;}
-.sumeNtit em.titIcon02{width:20px; height:20px; background-position:-21px -4px; margin-right:8px;}
-.sumeNtit em.titIcon03{width:19px; height:21px; background-position:-46px -4px;margin-right:8px;}
-.sumeNtit em.titIcon04{width:22px; height:18px; background-position:-70px -4px;margin-right:7px;}
-.sumeNtit em.titIcon05{width:20px; height:18px; background-position:-96px -4px;margin-right:8px;}
-.sumeNtit em.titIcon06{width:20px; height:18px; background-position:-120px -4px;margin-right:7px;}
-.sumeNtit em.titIcon07{width:20px; height:22px; background-position:-144px -4px;margin-right:7px;}
-.sumeNtit em.titIcon08{width:18px; height:22px; background-position:-168px -4px;margin-right:8px;}
-.sumeNtit em.titIcon09{width:22px; height:16px; background-position:-191px -4px;margin-right:8px;}
-.sumeNtit em.titIcon10{width:22px; height:17px; background-position:-217px -4px;margin-right:8px;}
-.sumeNtit em.titIcon11{width:22px; height:18px; background-position:-244px -4px;margin-right:7px;}
-.sumeNtit em.titIcon12{width:23px; height:23px; background-position:-270px -4px;margin-right:5px;}
-
-.nberN05,.nberN07,.nberN08{ overflow:hidden;width:700px; margin:14px 0 30px 53px;}
-.nberN05 li{ overflow:hidden; padding-bottom:5px;}
-.nberN05 li b,.nberN05 p{ display:block; float:left; line-height:24px; color:#333;}
-.nberN05 li b{ font-weight:normal; color:#999;}
-.nberN05 li p{width:620px; overflow:hidden;}
-.nberN05 li p em,.nberN05 li p i{ color:#999;}
-.nberN05 li p i{ padding:0 5px; color:#ccc; font-family:"宋体";}
-.nberN06{width:700px; overflow:hidden; line-height:24px; color:#4c4c4c;margin:14px 0 30px 53px;}
-.nberTit1{ color:#999; line-height:28px;}
-.nberTit1 span{ color:#f98700; padding-left:20px;} 
-.nberTit2,.nberTit3{ line-height:28px;}
-.nberTit2 b{ color:#36b1c0; font-size:16px; padding-right:14px;}
-.nberTit2 b.nber2Mag{ padding-left:40px;}
-.nberTit2 span{ color:#999;}
-.nberTit2 i,.nberTit3 i{ padding:0 8px; color:#ccc; font-family:"宋体";}
-.nberTit3 b{ font-weight:normal; padding-right:14px;}
-.nberN08{ margin-top:5px;}
-.nber8bg{ border-bottom:1px dashed #e6e6e6; padding:10px 0;}
-.nber8Last{ border-bottom:none; padding-bottom:0px;}
-.nberTit2 span.orange{ color:#f98700;}
-.nberN09,.nberN10{width:730px; overflow:hidden; margin:23px 0 40px 52px;}
-.nberN09 li{width:230px; height:230px; overflow:hidden; float:left; margin:0 6px 6px 0px;}
-.nberN09 li img{ display:block; max-width:100%; height:auto;}
-.nberN10 li{width:230px; overflow:hidden; float:left;margin:0 6px 6px 0px;}
-.nberN10 li span{ display:block;width:228px; height:228px; overflow:hidden; border:1px solid #f0eeef; background:#f7f7f7;}
-.nberN10 li img{ display:block; cursor:pointer;width:230px;height:230px;}
-.nberN10 li img.defimg{ margin:85px auto 0 auto;width:68px; height:79px;}
-.nberN10 li a{ display:block;width:230px; height:40px; background:#f0eeef; text-align:center; line-height:40px; color:#404040;}
-.nberN10 li:hover a{ background:#e5e3e4; color:#000;}
-.nberTit2x{ display:block;margin-right:40px;white-space:nowrap;float:left}
-.nberN11{border-bottom:1px dashed #ccc;padding-bottom:10px; margin-bottom:0px;}
-.nberN11last{ border-bottom:none;}
-
-.subSta{display:inline-block;width:80px; height:13px;}
-.subSta00{ background:url(http://assets.huibo.com/img/resumetate/pcstaricon.png) 0 0 no-repeat;}
-.subSta01{ background:url(http://assets.huibo.com/img/resumetate/pcstaricon.png) 0 -13px no-repeat;}
-.subSta02{ background:url(http://assets.huibo.com/img/resumetate/pcstaricon.png) 0 -26px no-repeat;}
-.subSta03{ background:url(http://assets.huibo.com/img/resumetate/pcstaricon.png) 0 -39px no-repeat;}
-.subSta04{ background:url(http://assets.huibo.com/img/resumetate/pcstaricon.png) 0 -52px no-repeat;}
-.subSta05{ background:url(http://assets.huibo.com/img/resumetate/pcstaricon.png) 0 -65px no-repeat;}
-
-
-/*==右边区域==*/
-.sumeMainRight ul{width:160px; margin:20px auto;}
-.sumeMainRight ul li{}
-.sumeMainRight ul li a{ color:#daedff; display:block;width:160px; height:40px; line-height:40px; text-indent:26px;}
-.sumeMainRight ul li a.subMlist01{ background:#00c0c7; border-radius:4px; font-size:16px; color:#fff;  margin-bottom:10px;}
-.sumeMainRight ul li a.subMlist02{ background:#ea6a63; border-radius:4px; font-size:16px; color:#fff;margin-bottom:10px;}
-
-.sumeMainRight ul li a em{ display:inline-block; vertical-align:middle; margin-right:10px; background:url(http://assets.huibo.com/img/resumetate/resumetate.png);}
-.sumeMainRight ul li a em.smIcon01{width:21px; height:21px; background-position:-47px -28px;}
-.sumeMainRight ul li a em.smIcon02{width:21px; height:22px; background-position:-73px -28px;}
-.sumeMainRight ul li a em.smIcon03{width:20px; height:22px; background-position:-99px -28px;}
-.sumeMainRight ul li a em.smIcon04{width:13px; height:15px; background-position:-125px -28px;}
-.sumeMainRight ul li a em.smIcon05{width:16px; height:15px; margin-right:9px; background-position:-144px -28px;}
-.sumeMainRight ul li a em.smIcon06{width:16px; height:15px; background-position:-164px -28px;}
-.sumeMainRight ul li a em.smIcon07{width:16px; height:16px; background-position:-185px -28px;}
-.sumeMainRight ul li a em.smIcon08{width:16px; height:16px; background-position:-205px -29px;}
-.sumeMainRight ul li a em.smIcon09{width:13px; height:16px; margin-right:13px; background-position:-225px -28px;}
-.sumeMainRight ul li a em.smIcon10{width:14px; height:14px; margin-right:11px; background-position:-241px -28px;}
-
-.sumeMainRight ul li a.subMlist01:hover{ background:#00d2da;}
-.sumeMainRight ul li a.subMlist02:hover{ background:#f97c76;}
-.sumeMainRight ul li a.subMlist03:hover{ background:#5a768f; border-radius:4px; }
-.sumeMainRight ul li a:hover em.smIcon04{width:13px; height:15px; background-position:-125px -51px;}
-.sumeMainRight ul li a:hover em.smIcon05{width:16px; height:15px; background-position:-144px -50px;}
-.sumeMainRight ul li a:hover em.smIcon06{width:16px; height:15px; background-position:-164px -51px;}
-.sumeMainRight ul li a:hover em.smIcon07{width:16px; height:16px; background-position:-185px -51px;}
-.sumeMainRight ul li a:hover em.smIcon08{width:16px; height:16px; background-position:-205px -52px;}
-.sumeMainRight ul li a:hover em.smIcon09{width:13px; height:16px; background-position:-225px -51px;}
-.sumeMainRight ul li a:hover em.smIcon10{width:14px; height:14px; background-position:-241px -51px;}
-
-.nuberFoot{ padding:40px 0px; text-align:center; color:#999;}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>曾畅的简历</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}code,kbd,samp{font-family:monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}[hidden],template{display:none}body,html{background:#f2f2f2;padding:0;margin:0;font-size:1pc;font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;color:#777171;line-height:1.8rem}*{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}.bg{background:#233946 no-repeat fixed}[v-cloak]{display:none}.back-top{border-radius:4px;width:2.2rem;height:2.2rem;background:#233946;position:fixed;left:50%;bottom:75pt;margin-left:31.625rem;text-align:center;line-height:2.1rem;color:#fff;cursor:pointer}.back-top:hover{box-shadow:0 0 10px 0 #969696;background:#142a33}.empty-text{font-weight:700;font-size:3rem;color:#ccc;display:block;margin:5% auto;text-align:center}@keyframes leftIn{0%{opacity:0;transform:translate(0,-30px)}to{opacity:1;transform:translate(0,0)}}@-webkit-keyframes leftIn{0%{opacity:0;transform:translate(0,-30px)}to{opacity:1;transform:translate(0,0)}}.main{width:61.25rem;margin:auto;overflow:hidden;animation:leftIn .6s cubic-bezier(0.165,0.84,0.44,1)}.header,.main{position:relative}.header{background:hsla(0,0%,100%,.92);margin-top:11.25rem;border-radius:.625rem;margin-bottom:1.25rem;box-shadow:0 0 .5rem 0 #333;padding:1rem}.header .profile{text-align:center;margin-top:3.6rem;font-size:1.2rem}.profile .name{display:block;font-weight:700;font-size:2rem;margin-bottom:1rem}.profile .info span{margin:0 .5rem}.profile .job{display:block}.profile .contact{margin:.25rem 0}.contact span{padding:0 .6rem}.contact span i.fa{margin:0 .6rem}.self-intro{text-align:center}.block{background:hsla(0,0%,100%,.92);border-radius:.625rem;min-height:11.25rem;margin-bottom:1.25rem;box-shadow:0 0 .5rem 0 #333;padding:1rem}.skills ul{list-style:none;padding:0;overflow:hidden}.skills .skill{float:left;width:45.8%;padding:.6rem;background:#fff;margin:1%;border-radius:4px;overflow:hidden;position:relative}.skills .skill:hover{transform:scale3d(1.05,1.1,1)}.skills .skill span.skill-name{display:inline-block;width:5pc;text-align:right;font-weight:700}.skills .skill span.skill-value{display:inline-block;margin-left:2rem}.skills .skill span.skill-ablity{float:right;width:75pt}.skills .skill span.skill-value .fa{margin-left:.6rem}.sec-title{font-size:1.2rem;text-indent:.6rem;padding:.6rem}.position{margin:.6rem;padding:.6rem;background:#fff}.works ul{list-style:none;padding:0;margin:.6rem}.works li{background:#fff;padding:.6rem;margin-bottom:.5rem;position:relative;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out}.works li:hover{box-shadow:0 0 1rem 0 #ccc}.avatar{width:6.25rem;height:6.25rem;background:#233946;border-radius:50%;padding:.625rem;position:absolute;left:50%;top:-4.0625rem;margin-left:-3.6375rem}.avatar img{border-radius:50%;display:block;width:5.625rem;height:5.625rem;padding:.3125rem;background:#fff}.avatar:hover{transform:rotate(180deg)}
+    </style>
 </head>
-<body>
-<div class="resumeMain clearfix">
-	<div class="sumeMainLeft">
-        <div class="numberName">
-            <img class='nberImg' width="140" height="140" src="http://assets.huibo.com/img/v2/resumeM/head-defects.jpg" />            <div class="numberNx">
-            	<div class="nberN01">
-                	<span>曾畅</span>
-                </div>
-                <div class="nberN02">
-                	<span>男</span>                    <em>|</em>
-                    <span>29岁</span>                    <em>|</em>
-                    <span>大专</span>                    <em>|</em>
-                    <span>6年工作经验</span>                    <em>|</em>
-                    <span>165cm</span>                    <em>|</em>
-                    <span>55kg</span>                    <em>|</em>
-                    <span>未婚</span>                                    </div>
-                <div class="nberN03">
-                	<span>户籍：</span>湖北省,武汉市,江岸区&nbsp;&nbsp;&nbsp;&nbsp;                    <span>现居：</span>重庆,渝北区                </div>
-                <div class="nberN04">
-                	<em></em>
-                    <span>18623627790</span><span id="phoneAddr"></span>                    <i></i>
-                    <span>153033541@qq.com</span>                    <b></b>
-	                <span>153033541</span>                </div>
-            </div>
-        </div>
-                <div class="sumeNtit">
-        	<em class="titIcon01"></em>
-            求职意向
-        </div>
-                <ul class="nberN05">
-        	<li>
-            	<b>希望从事：</b>
-                <p>网站前端开发
-                	<em>（可以接受兼职）</em>
-                    <i>|</i>高级/资深（非管理岗）                    <i>|</i>
-                    8000及以上 元/月                    <em>（不低于此薪资）</em>                </p>
-            </li>            <li>
-            	<b>工作地点：</b>
-                <p>渝北区</p>
-            </li>            <li>
-            	<b>期望行业：</b>
-                <p>软件;IT服务/系统集成</p>
-            </li>            <li>
-            	<b>期望类别：</b>
-                <p>其他（前端开发）,网页设计/美工,运营/市场专员</p>
-            </li>                        <li>
-            	<b>求职状态：</b>
-                <p>在职，有更好的机会才考虑<i>|</i>15天内到岗</p>
-            </li>
-                    </ul>
-                <div class="sumeNtit">
-        	<em class="titIcon02"></em>
-            自我评价
-        </div>
-        <div class="nberN06">网页设计 web前端开发 团队经验</div>
-                        <div class="sumeNtit">
-        	<em class="titIcon03"></em>
-            工作经历
-        </div>
-                <div class="nberN07 nberN11 ">
-        	<p class="nberTit1">2012.01-至今<span>[4年5个月] 全职 </span></p>
-            <p class="nberTit2"><b>前端工程师</b><span> 高级/资深（非管理岗）</span></p>
-            <p class="nberTit3"><b>重庆亚派科技有限公司</b>
-                          <span>民营</span>
-                                    <i>|</i><span>51-100人</span></p>            <ul class="nberN05" style="margin:0;">
-        	        	<li>
-            	<b>工作职责：</b>
-                <p>负责前端页面的技术选型与架构</p>
-            </li>
-                                </ul>
-        </div>
-                <div class="nberN07 nberN11 ">
-        	<p class="nberTit1">2010.10-2011.10<span>[1年] 全职 </span></p>
-            <p class="nberTit2"><b>网站前端</b><span> 普通员工</span><i>|</i><span>3500元/月</span></p>
-            <p class="nberTit3"><b>重庆商英电子商务有限公司</b>
-                          <span>民营</span>
-                                    <i>|</i><span>51-100人</span></p>            <ul class="nberN05" style="margin:0;">
-        	        	<li>
-            	<b>工作职责：</b>
-                <p>负责网站前台的制作，测试。</p>
-            </li>
-                                </ul>
-        </div>
-                <div class="nberN07 nberN11 nberN11last">
-        	<p class="nberTit1">2008.09-2010.09<span>[2年] 全职 </span></p>
-            <p class="nberTit2"><b>web前端</b><i>|</i><span>2000元/月</span></p>
-            <p class="nberTit3"><b>武汉旗客科技有限公司</b>
-                                    <i>|</i><span>50人以下</span></p>            <ul class="nberN05" style="margin:0;">
-        	        	<li>
-            	<b>工作职责：</b>
-                <p>帮客户设计网页和布局，并利用HTML语言与CSS将设计好的页面写成WEB页面。曾参与公司网站的部分设计。</p>
-            </li>
-                                </ul>
-        </div>
-                                <div class="sumeNtit">
-        	<em class="titIcon04"></em>
-            教育培训
-        </div>
-        <div class="nberN08">
-                	<div class="nber8bg nber8Last">
-            	<p class="nberTit1"> 2005.09-2008.06</p>                <p class="nberTit2"><b>大专</b><i>|</i><span>武汉大学东湖分校</span><i>|</i><span>计算机网络技术</span></p>
-                <ul class="nberN05" style="margin:0;">
-                                         <li>
-                        <b>专业课程：</b>
-                        <p>网站建设，优化推广。</p>
-                     </li>
-                                  	</ul>
-            </div>
-                          </div>
-                        <div class="sumeNtit">
-        	<em class="titIcon05"></em>
-            项目经验
-        </div>
-        <div class="nberN08">
-                	<div class="nber8bg">
-            	<p class="nberTit1"> 2015.10-至今</p>                <p class="nberTit2"><b>重庆人工降雨分析系统</b><span class="orange">担任：前端工程师</span></p>
-                <ul class="nberN05" style="margin:0;">
-                    <li>
-                        <b>项目介绍：</b>
-                        <p>重庆气象人工降雨分析系统</p>
-                     </li>                     <li>
-                        <b>项目经历：</b>
-                        <p>重庆气象人工降雨分析系统 http://www.ideayapai.com/index.php/products/three-nav-ys.html
-负责整个项目的架构和编码</p>
-                     </li>             	</ul>
-            </div>
-                 	<div class="nber8bg">
-            	<p class="nberTit1"> 2013.10-至今</p>                <p class="nberTit2"><b>重庆爱心有我教育平台</b><span class="orange">担任：项目负责人、团队负责人</span></p>
-                <ul class="nberN05" style="margin:0;">
-                    <li>
-                        <b>项目介绍：</b>
-                        <p>百圣校长信息管理平台www.ax139.com</p>
-                     </li>                     <li>
-                        <b>项目经历：</b>
-                        <p>负责项目统筹规划，页面web以及代码实现。
-photoshop cs4,dreamwear cs4,firefox 10.0(包含插件firebug,colorzilla.Web developer toolbar)，firework cs4
-zendstudio eclips mysql CI</p>
-                     </li>             	</ul>
-            </div>
-                 	<div class="nber8bg">
-            	<p class="nberTit1"> 2015.06-2015.12</p>                <p class="nberTit2"><b>桥梁健康检测系统</b><span class="orange">担任：前端工程师</span></p>
-                <ul class="nberN05" style="margin:0;">
-                    <li>
-                        <b>项目介绍：</b>
-                        <p>通过采集桥梁监测数据，运用阈值分析法和并行计算，可为桥梁工程方面专家提供桥梁数据模型的参考，掌握桥梁关键结构和整体的变化趋势，为桥梁的损伤诊断提供决策依据</p>
-                     </li>                     <li>
-                        <b>项目经历：</b>
-                        <p>桥梁健康检测系统 http://www.ideayapai.com/index.php/products/three-nav2.html</p>
-                     </li>             	</ul>
-            </div>
-                 	<div class="nber8bg">
-            	<p class="nberTit1"> 2013.05-2013.08</p>                <p class="nberTit2"><b>重庆校园</b><span class="orange">担任：项目负责人</span></p>
-                <ul class="nberN05" style="margin:0;">
-                    <li>
-                        <b>项目介绍：</b>
-                        <p>重庆学校展播平台，同时是一个学校云OA系统www.023xiaoyuan.com</p>
-                     </li>                     <li>
-                        <b>项目经历：</b>
-                        <p>负责整个项目的架构和编码</p>
-                     </li>             	</ul>
-            </div>
-                 	<div class="nber8bg">
-            	<p class="nberTit1"> 2013.01-2013.03</p>                <p class="nberTit2"><b>重庆商业委员会门户</b><span class="orange">担任：项目负责人</span></p>
-                <ul class="nberN05" style="margin:0;">
-                    <li>
-                        <b>项目介绍：</b>
-                        <p>重庆商业委员会门户系统</p>
-                     </li>                     <li>
-                        <b>项目经历：</b>
-                        <p>负责项目架构，前后台编码以及与业主其它系统整合开发 wsy.cq.gov.cn</p>
-                     </li>             	</ul>
-            </div>
-                 	<div class="nber8bg nber8Last">
-            	<p class="nberTit1"> 2012.07-2012.11</p>                <p class="nberTit2"><b>重庆西部现代物流园</b><span class="orange">担任：前端工程师</span></p>
-                <ul class="nberN05" style="margin:0;">
-                    <li>
-                        <b>项目介绍：</b>
-                        <p>通过建设大型企业专用配送中心、商超共用配送中心等,大力发展包括家电物流、医药物流、商超配送物流等在内的专业配送物流,在物流园形成重庆市城市配送集聚发展高地。 ...
 
-http://www.wmlip.com/</p>
-                     </li>                     <li>
-                        <b>项目经历：</b>
-                        <p>参与前段页面实现，后端数据结合</p>
-                     </li>             	</ul>
+<body class="bg">
+    <div class="main" id="app">
+        <div class="header">
+            <div class="avatar">
+                <img src="./dogge.jpg" alt="">
             </div>
-                 </div>
-                                <div class="sumeNtit">
-        	<em class="titIcon07"></em>
-            技能专长
-        </div>
-        <div class="nberN07">
-                	<p class="nberTit2 nberTit2x">
-        	<b>PHP</b><span>精通</span>
-        	</p>        	
-                	<p class="nberTit2 nberTit2x">
-        	<b>HTML</b><span>精通</span>
-        	</p>        	
-                	<p class="nberTit2 nberTit2x">
-        	<b>photoshop</b><span>熟练</span>
-        	</p>        	
-                	<p class="nberTit2 nberTit2x">
-        	<b>nodejs</b><span>熟练</span>
-        	</p>        	
-                	<p class="nberTit2 nberTit2x">
-        	<b>sql</b><span>熟练</span>
-        	</p>        	
-                	<p class="nberTit2 nberTit2x">
-        	<b>jquery</b><span>精通</span>
-        	</p>        	
-                	<p class="nberTit2 nberTit2x">
-        	<b>JavaScript</b><span>精通</span>
-        	</p>        	
-                	<p class="nberTit2 nberTit2x">
-        	<b>mongodb</b><span>熟练</span>
-        	</p>        	
-                	<p class="nberTit2 nberTit2x">
-        	<b>vuejs</b><span>熟练</span>
-        	</p>        	
-                	<p class="nberTit2 nberTit2x">
-        	<b>backbonejs</b><span>熟练</span>
-        	</p>        	
+            <div class="profile">
+                <span class="name">曾畅</span>
+                <div class="job">前端工程师</div>
+                <div class="info">
+                    <span>男</span><span>30岁</span><span>5年工作经验</span>
                 </div>
-                                <div class="sumeNtit">
-        	<em class="titIcon09"></em>
-            其他信息
+                <div class="contact">
+                    <span><i class="fa fa-qq" aria-hidden="true"></i>153033541</span>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>zkimyes66@gmail.com</span>
+                    <span><i class="fa fa-github"></i>https://github.com/zkimyes</span>
+                </div>
+            </div>
+            <div class="self-intro">
+                多年前端开发经验，学习能力强，善于思考。具备独立开发能力，亦能合作开发。
+            </div>
         </div>
-        <div class="nberN07">
-            <ul class="nberN05" style="margin:0;">
-                                            <li>
-                    <b>兴趣爱好：</b>                    <p>跟技术相关的东西都感兴趣</p>                </li>
-                                        </ul>
+        <section class="block skills">
+            <ul>
+                <li v-cloak v-for="skill in skills" class="skill html">
+                    <span class="skill-name">{{skill.skillName}}</span>
+                    <span class="skill-value">
+                        <i v-for="item in skill.skillAblityStar" class="fa fa-star" aria-hidden="true"></i>
+                    </span>
+                    <span class="skill-ablity">{{skill.skillAblityStar|ablity}}</span>
+                </li>
+            </ul>
+        </section>
+        <section class="block work-history">
+            <div class="sec-title">工作经历</div>
+            <div class="position">
+                <span>2010.09~2011~10</span>
+                <div class="company">重庆商英电子商务有限公司</div>
+                <div class="name">前端工程师</div>
+            </div>
+            <div class="position">
+                <span>2012.02~2017~02</span>
+                <div class="company">重庆亚派科技有限公司</div>
+                <div class="name">前端工程师</div>
+            </div>
+            <div class="sec-title">项目经验</div>
+            <div class="works">
+                <ul>
+                    <li>
+                        2012.05 wedding 婚恋网 使用html/css布局，利用jquery实现交互和部分动画。
+                    </li>
+                    <li>
+                        2012.09 教学管理系统 使用html/css 布局，利用jquery实现交互和数据通信。
+                    </li>
+                    <li>
+                        2013.05 重庆西部物流园门户网站 使用html/css布局，利用jquery实现交互和部分动画。
+                    </li>
+                    <li>
+                        2013.07 母婴健康管理系统 使用html/css布局，利用jquery实现交互和部分动画，利用jquery ajax 和后台交换数据。
+                    </li>
+                    <li>
+                        2013.11 桥梁健康监测系统 v1.1 使用html/css布局，利用jquery实现交互和部分动画，利用jquery ajax 和后台交换数据。
+                    </li>
+                    <li>
+                        2014.05 桥梁健康监测系统 v1.2 使用了svg和部分canvas API 实现数据可视化
+                    </li>
+                    <li>2014.06 重庆商业委员会门户网站 负责前台和后台编码，前台采用html/css布局,利用jquery负责交互与后台数据通信。后台采用php+mysql架构，利用memcache负责缓存和session存储</li>
+                    <li>
+                        2014.09 桥梁健康巡检app 利用jquery-mobile实现的混合app
+                    </li>
+                    <li>
+                        2015.04 桥梁健康检测系统 v1.3 开始引入angularjs框架进行重构。
+                    </li>
+                    <li>
+                        2015.06 重庆校园管理系统 (个人项目，前端采用vuejs,后端采用php+mysql架构)。
+                    </li>
+                    <li>2015.09 昆明路桥管理系统 利用requirejs负责模块引用，使用angularjs框架负责交互和后台数据交换</li>
+                    <li>
+                        2015.11 昆明路桥档案管理系统 利用requestjs负责前端模块引用，使用angularjs框架。部分利用expressjs负责转发api
+                    </li>
+                    <li>
+                        2016.04 桥梁健康管理系统v2 使用requrejs负责模块管理 vuejs负责页面交互 jquery负责后端数据交互。
+                    </li>
+                    <li>
+                        2016.06 桥梁健康管理系统v2.1 使用threejs替代unity3d实现web端桥梁3d模型展示
+                    </li>
+                    <li>
+                        2016.08 天下奇观app 使用reactjs redux react-router webpack 实现移动端混合app
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="block">
+            <div class="sec-title">博客</div>
+            <div>
+                <span class="empty-text">啥都没有</span>
+            </div>
+        </section>
+        <div v-if="showTop" @click="backTop()" class="back-top">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
         </div>
-                    </div>
-</div>
-<iframe id="printIframe"  height="0" width="0" frameborder="0"></iframe>
-<div class="nuberFoot" style='padding-bottom:0px'>
-<style type="text/css">
-	.footer{padding:0 0 50px;text-align: center;color:#999}
-</style>
-<div class="footer">©2016 汇博人才网 版权所有</div>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?fb51309e47424acd6e31c0bd2a65a5a1";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<script type="text/javascript" language="javascript" src="http://assets.huibo.com/js/track.js?v=20150226"></script>
-<!-- Piwik -->
-<!--
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//119.84.79.100:98/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 3]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
--->
-<!-- End Piwik Code -->
-</div>
+    </div>
+    <script src="https://cdn.bootcss.com/vue/2.2.6/vue.min.js"></script>
+    <script class="app">
+        var app=new Vue({el:"#app",filters:{ablity:function(a){return a||"number"!==typeof a?["\u4e86\u89e3","\u5165\u95e8","\u719f\u7ec3","\u7cbe\u901a","\u4e13\u5bb6"][a-1]:""}},data:{backImg:"./02.jpg",showTop:!1,skills:[{skillName:"html",skillAblityStar:4},{skillName:"css",skillAblityStar:4},{skillName:"js",skillAblityStar:4},{skillName:"node",skillAblityStar:3},{skillName:"vuejs",skillAblityStar:4},{skillName:"angularjs",skillAblityStar:3},{skillName:"reactjs",skillAblityStar:4},{skillName:"expressjs",
+skillAblityStar:3},{skillName:"koajs",skillAblityStar:3},{skillName:"mysql",skillAblityStar:3},{skillName:"php",skillAblityStar:3},{skillName:"mongodb",skillAblityStar:2},{skillName:"webpack",skillAblityStar:3},{skillName:"git",skillAblityStar:3}]},methods:{backTop:function(){document.body.scrollTop=0}},mounted:function(){var a=new Image,b=this,c=document.body;a.src=b.backImg;a.onload=function(){c.style.backgroundImage="url("+b.backImg+")"};document.addEventListener("scroll",function(a){b.showTop=
+300<a.target.body.scrollTop?!0:!1})}});
+    </script>
 </body>
+
 </html>
